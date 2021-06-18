@@ -16,7 +16,7 @@ namespace ZoobookTask
         //}
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=ISHTIAQASIF-PC;Database=EmployeeRecords;Integrated Security=True;");
+            optionsBuilder.UseSqlServer("Server=.;Database=EmployeeRecords;Integrated Security=True;");
         }
 
         public DbSet<Employee> Employees { get; set; }
